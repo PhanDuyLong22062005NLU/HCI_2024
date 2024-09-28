@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web đơn giản</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#" onclick="showHome()">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="#" onclick="toggleLabs()">Labs</a>
+            <ul class="dropdown" id="labsDropdown">
+              <li><a href="#">Lab 1</a></li>
+              <li><a href="#">Lab 2</a></li>
+              <li><a href="#">Lab 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div id="homeSection" class="home hidden">
+          <h1 id="welcomeText">Chào mừng bạn đến với trang web!</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
